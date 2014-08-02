@@ -1,0 +1,182 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audio</title>
+  <link rel="stylesheet" href="css/app.css" />
+
+  <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+<body>
+  <div class="large-10 large-offset-1 contents columns">
+    <div class="large-4 columns">
+      <div class="row">
+        <form action="">
+          <fieldset>
+            <div class="row">
+              <div class="large-12 column">
+                <span>振幅増長　</span>
+                <input id="check-use-gain" type="checkbox" name="" value=""><label for="check-use-gain">use</label></input>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <div class="row">
+                    <div class="large-3 columns">
+                      <label class="right inline" for="">増加率</label>
+                    </div>
+                    <div class="large-4 columns left">
+                      <div class="row collapse">
+                        <div class="large-8 columns">
+                          <input type="number" id="in-gain" value="1" min="0" max="30" step="0.1"/>    
+                        </div>
+                        <div class="large-4 columns">
+                          <span class="postfix radius">%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="large-12 column">
+                <span>ディレイ・リバーブ</span>
+                <input id="check-use-delay" type="checkbox" name="" value=""><label for="check-use-delay">use</label></input>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <div class="row">
+                    <div class="large-3 columns">
+                      <label class="right inline" for="">減衰率</label>
+                    </div>
+                    <div class="large-4 columns left">
+                      <div class="row collapse">
+                        <div class="large-8 columns">
+                          <input type="number" id="in-dec-rate" value="0.5" min="0" max="1" step="0.01"/>    
+                        </div>
+                        <div class="large-4 columns">
+                          <span class="postfix radius">%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <div class="row">
+                    <div class="large-3 columns">
+                      <label class="right inline" for="">遅延時間</label>
+                    </div>
+                    <div class="large-4 columns left">
+                      <div class="row collapse">
+                        <div class="large-8 columns">
+                          <input type="number" id="in-delay-time" value="0.5" min="0" max="1" step="0.01"/>
+                        </div>
+                        <div class="large-4 columns">
+                          <span class="postfix radius">%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <div class="row">
+                    <div class="large-3 columns">
+                      <label class="right inline" for="">繰り返し</label>
+                    </div>
+                    <div class="large-4 columns left">
+                      <div class="row collapse">
+                        <div class="large-8 columns">
+                          <input type="number" id="in-repeat" value="2" min="1" max="10" step="1"/>    
+                        </div>
+                        <div class="large-4 columns">
+                          <span class="postfix radius">回</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="large-12 columns">
+                <a id="btn-delay" class="button tiny success" href="#">ディレイ</a>
+                <a id="btn-reverb" class="button tiny success" href="#">リバーブ</a>
+              </div>
+
+              <div class="large-12 column">
+                <span>トレモロ</span>
+                <input id="check-use-toremoro" type="checkbox" name="" value=""><label for="check-use-toremoro">use</label></input>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <div class="row">
+                    <div class="large-3 columns">
+                      <label class="right inline" for="">揺れの大きさ</label>
+                    </div>
+                    <div class="large-3 columns left">
+                      <div class="row collapse">
+                        <div class="large-8 columns">
+                          <input type="number" id="in-wave-size" value="0.5" min="0" max="1" step="0.01"/>    
+                        </div>
+                        <div class="large-4 columns">
+                          <span class="postfix radius"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <div class="row">
+                    <div class="large-3 columns">
+                      <label class="right inline" for="">揺れの早さ</label>
+                    </div>
+                    <div class="large-3 columns left">
+                      <div class="row collapse">
+                        <div class="large-8 columns">
+                          <input type="number" id="in-wave-speed" value="5.0" min="0" max="10" step="0.1"/>    
+                        </div>
+                        <div class="large-4 columns">
+                          <span class="postfix radius"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="large-12 column">
+                <span>ピッチ</span>
+                <input id="check-use-pitch" type="checkbox" name="" value=""><label for="check-use-pitch">use</label></input>
+              </div>
+
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div class="large-8 columns">
+      <div class="row">
+        <div class="large-12 columns"><canvas id="frequency"></canvas></div>
+        <div class="large-12 columns"><canvas id="timedomain"></canvas></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="bower_components/jquery/jquery.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

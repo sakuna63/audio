@@ -1,2 +1,46 @@
-@import "settings";
+// @import "settings"
 @import "foundation";
+
+$body-bg: #91feeb;
+$contents-bg: #73d7c6;
+$graph-bg: #ecf0f1;
+$fieldset-bg: $graph-bg;
+$legend-bg: transparent;
+
+body {
+  background: $body-bg url() 0 0 no-repeat;
+}
+
+@mixin radius($p) {
+  -webkit-border-radius: $p;
+  -moz-border-radius: $p;
+  border-radius: $p;
+}
+.contents {
+//  @include grid-row();
+//  $row-width: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
+  /* min-height: 100%; */
+  margin-top: 3%;
+  background: $contents-bg url() 0 0 no-repeat;
+  padding: 20px;
+  @include radius(8px);
+}
+
+canvas {
+  width: 100%;
+  min-width: 100%;
+  border: 1px solid #000;
+  background: $graph-bg url() 0 0 no-repeat;
+  /* background: #333 url() 0 0 no-repeat; */
+}
+
+fieldset {
+  background: $fieldset-bg url() 0 0 no-repeat;
+
+  legend {
+    background: $legend-bg url() 0 0 no-repeat;
+  }
+}
+

@@ -1,0 +1,55 @@
+/*
+Syntax error: File to import not found or unreadable: foundation.
+              Load paths:
+                /Users/sakuna63/Develop/audio/scss
+                /Users/sakuna63/Develop/audio/scss
+        on line 2 of /Users/sakuna63/Develop/audio/scss/app.scss
+
+1: // @import "settings"
+2: @import "foundation";
+3: 
+4: $body-bg: #91feeb;
+5: $contents-bg: #73d7c6;
+6: $graph-bg: #ecf0f1;
+7: $fieldset-bg: $graph-bg;
+
+Backtrace:
+/Users/sakuna63/Develop/audio/scss/app.scss:2
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/import_node.rb:45:in `import'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/root_node.rb:20:in `render'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/engine.rb:315:in `_render'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/engine.rb:262:in `render'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/exec.rb:443:in `watch_or_update'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/exec.rb:326:in `process_result'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/exec.rb:41:in `parse'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/lib/sass/exec.rb:21:in `parse!'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.13/bin/sass:13:in `<top (required)>'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/bin/sass:23:in `load'
+/Users/sakuna63/.rbenv/versions/2.0.0-p247/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: foundation.\A               Load paths:\A                 /Users/sakuna63/Develop/audio/scss\A                 /Users/sakuna63/Develop/audio/scss\A         on line 2 of /Users/sakuna63/Develop/audio/scss/app.scss\A \A 1: // @import \"settings\"\A 2: @import \"foundation\";\A 3: \A 4: $body-bg: #91feeb;\A 5: $contents-bg: #73d7c6;\A 6: $graph-bg: #ecf0f1;\A 7: $fieldset-bg: $graph-bg;"; }
